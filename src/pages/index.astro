@@ -4,20 +4,20 @@ import "@/styles/globals.css";
 ---
 
 <Layout title="Frontend Mentor | Skilled e-learning landing page">
-  <header
-    class="header z-50 flex items-center justify-between px-4 pt-4 md:ml-[2.44rem] md:mr-10 md:mt-6 lg:max-2xl:mx-[10.36rem] lg:max-2xl:mt-[2.42rem]"
-  >
-    <img src="/assets/logo-dark.svg" alt="logo" class="logoImg" />
-    <button
-      type="button"
-      class="button1Idle button1Hover z-50 h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:max-2xl:h-12 lg:max-2xl:w-[10.4375rem]"
+  <main class="sectionWrapper overflow-hidden">
+    <header
+      class="header z-50 flex items-center justify-between px-4 pt-4 md:ml-[2.44rem] md:mr-10 md:mt-6 lg:max-2xl:mx-[10.36rem] lg:max-2xl:mt-[2.42rem]"
     >
-      Get Started
-    </button>
-  </header>
-  <main class="sectionWrapper">
+      <img src="/assets/logo-dark.svg" alt="logo" class="logoImg" />
+      <button
+        type="button"
+        class="button1Idle button1Hover z-50 h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:max-2xl:h-12 lg:max-2xl:w-[10.4375rem]"
+      >
+        Get Started
+      </button>
+    </header>
     <section
-      class="section1 relative mx-4 mt-[2.38rem] flex flex-col bg-white md:ml-[2.44rem] md:mr-10 md:mt-[6.56rem] md:max-2xl:flex-row lg:max-2xl:mx-[10.31rem] lg:max-2xl:mt-[11.6rem] lg:max-2xl:items-center lg:max-2xl:justify-between"
+      class="section1 erflow-x-clip relative z-50 mx-4 mt-[2.38rem] flex flex-col bg-white md:ml-[2.44rem] md:mr-10 md:mt-[6.56rem] md:max-2xl:flex-row lg:max-2xl:mx-[10.31rem] lg:max-2xl:mt-[11.6rem] lg:max-2xl:items-center lg:max-2xl:justify-between"
     >
       <div class="mb-[4.37rem] md:w-[24.875rem] lg:max-2xl:w-[28.5625rem]">
         <h1
@@ -37,7 +37,7 @@ import "@/styles/globals.css";
           >Get Started</button
         >
       </div>
-      <picture>
+      <picture class="">
         <source
           media="(min-width:1024px )"
           srcset="/assets/image-hero-desktop.png"
@@ -49,12 +49,12 @@ import "@/styles/globals.css";
         <img
           src="/assets/image-hero-mobile.png"
           alt="heroImage"
-          class="absolute top-[21.19rem] md:right-[-329px] md:top-[-268px] lg:max-2xl:right-[-507px] lg:max-2xl:top-[-430px]"
+          class="absolute top-[21.19rem] -z-10 object-none md:right-[-329px] md:top-[-268px] lg:max-2xl:right-[-507px] lg:max-2xl:top-[-430px]"
         />
       </picture>
     </section>
     <section
-      class="section2 grid grid-cols-1 gap-y-10 px-4 pb-20 pt-[20rem] md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-14 md:pb-[5.38rem] md:pl-[2.44rem] md:pr-10 md:max-2xl:pt-[16.62rem] lg:max-2xl:grid-cols-3 lg:max-2xl:gap-y-20 lg:max-2xl:px-[10.31rem] lg:max-2xl:pb-[8.75rem] 2xl:max-2xl:gap-x-[1.88rem]"
+      class="section2 grid grid-cols-1 gap-y-10 overflow-hidden px-4 pb-20 pt-[17rem] md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-14 md:pb-[5.38rem] md:pl-[2.44rem] md:pr-10 md:pt-[5.62rem] lg:pt-[5.62rem] lg:max-2xl:grid-cols-3 lg:max-2xl:gap-y-20 lg:max-2xl:px-[10.31rem] lg:max-2xl:pb-[8.75rem] 2xl:max-2xl:gap-x-[1.88rem]"
     >
       <div
         class="box1 flex h-[7.5rem] w-[21.4375rem] items-center rounded-[0.625rem] pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:items-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
@@ -67,21 +67,21 @@ import "@/styles/globals.css";
       </div>
       <!-- Animation -->
       <div
-        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:justify-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
       >
         <img
           src="/assets/icon-animation.svg"
           alt="icon-animation"
           class="absolute -top-8"
         />
-        <div class="flex flex-col gap-4">
+        <div class="mt-2 flex flex-col gap-4">
           <h2
             class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
           >
             Animation
           </h2>
           <p
-            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+            class="w-[17.875rem] text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
           >
             Learn the latest animation techniques to create stunning motion
             design and captivate your audience.
@@ -89,27 +89,27 @@ import "@/styles/globals.css";
         </div>
         <button
           type="button"
-          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          class="flex cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
       <!--Design  -->
       <div
-        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:justify-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
       >
         <img
           src="/assets/icon-design.svg"
           alt="icon-design"
           class="absolute -top-8"
         />
-        <div class="flex flex-col gap-4">
+        <div class="mt-2 flex flex-col gap-4">
           <h2
             class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
           >
             Design
           </h2>
           <p
-            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+            class="w-[17.875rem] text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
           >
             Create beautiful, usable interfaces to help shape the future of how
             the web looks.
@@ -117,27 +117,27 @@ import "@/styles/globals.css";
         </div>
         <button
           type="button"
-          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          class="mt-[1.40rem] flex cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
       <!-- Photography -->
       <div
-        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:justify-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
       >
         <img
           src="/assets/icon-photography.svg"
           alt="icon-photography"
           class="absolute -top-8"
         />
-        <div class="flex flex-col gap-4">
+        <div class="mt-2 flex flex-col gap-4">
           <h2
             class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
           >
             Photography
           </h2>
           <p
-            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+            class="w-[17.875rem] text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
           >
             Explore critical fundamentals like lighting, composition, and focus
             to capture exceptional photos.
@@ -145,27 +145,27 @@ import "@/styles/globals.css";
         </div>
         <button
           type="button"
-          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          class="mt-[1.70rem] flex cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
       <!-- Crypto -->
       <div
-        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:justify-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
       >
         <img
           src="/assets/icon-crypto.svg"
           alt="icon-crypto"
           class="absolute -top-8"
         />
-        <div class="flex flex-col gap-4">
+        <div class="mt-2 flex flex-col gap-4">
           <h2
             class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
           >
             Crypto
           </h2>
           <p
-            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+            class="w-[17.875rem] text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
           >
             All you need to know to get started investing in crypto. Go from
             beginner to advanced with this 54 hour course.
@@ -173,27 +173,27 @@ import "@/styles/globals.css";
         </div>
         <button
           type="button"
-          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          class="flex cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
       <!-- Business -->
       <div
-        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:justify-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
       >
         <img
           src="/assets/icon-business.svg"
           alt="icon-business"
           class="absolute -top-8"
         />
-        <div class="flex flex-col gap-4">
+        <div class="mt-2 flex flex-col gap-4">
           <h2
             class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
           >
             Business
           </h2>
           <p
-            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+            class="w-[17.875rem] text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
           >
             A step-by-step playbook to help you start, scale, and sustain your
             business without outside investment.
@@ -201,7 +201,7 @@ import "@/styles/globals.css";
         </div>
         <button
           type="button"
-          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          class="flex cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
