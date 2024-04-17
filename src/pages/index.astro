@@ -5,46 +5,234 @@ import "@/styles/globals.css";
 
 <Layout title="Frontend Mentor | Skilled e-learning landing page">
   <header
-    class="header flex items-center justify-between px-4 pt-4 md:ml-[2.44rem] md:mr-10 md:mt-6 lg:mx-[10.31rem] lg:mt-[2.42rem]"
+    class="header z-50 flex items-center justify-between px-4 pt-4 md:ml-[2.44rem] md:mr-10 md:mt-6 lg:max-2xl:mx-[10.36rem] lg:max-2xl:mt-[2.42rem]"
   >
     <img src="/assets/logo-dark.svg" alt="logo" class="logoImg" />
     <button
       type="button"
-      class="button1Idle button1Hover h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:h-12 lg:w-[10.4375rem]"
+      class="button1Idle button1Hover z-50 h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:max-2xl:h-12 lg:max-2xl:w-[10.4375rem]"
     >
       Get Started
     </button>
   </header>
-  <main>
+  <main class="sectionWrapper">
     <section
-      class="section1 mx-4 mt-[2.38rem] flex flex-col bg-white md:ml-[2.44rem] md:mr-10 md:mt-[2.25rem] md:max-lg:flex-row lg:mx-[10.31rem] lg:mt-[5.44rem] lg:items-center lg:justify-between"
+      class="section1 relative mx-4 mt-[2.38rem] flex flex-col bg-white md:ml-[2.44rem] md:mr-10 md:mt-[6.56rem] md:max-2xl:flex-row lg:max-2xl:mx-[10.31rem] lg:max-2xl:mt-[11.6rem] lg:max-2xl:items-center lg:max-2xl:justify-between"
     >
-      <div class="md:w-[24.875rem] lg:w-[28.5625rem]">
+      <div class="mb-[4.37rem] md:w-[24.875rem] lg:max-2xl:w-[28.5625rem]">
         <h1
-          class="mb-[1.63rem] text-[2.5rem] font-extrabold leading-normal text-[#13183F] md:mb-[1.56rem] lg:mb-[1.81rem] lg:text-[3.5rem]"
+          class="mb-[1.63rem] text-[2.5rem] font-extrabold leading-normal text-[#13183F] md:mb-[1.56rem] lg:max-2xl:mb-[1.81rem] lg:max-2xl:text-[3.5rem]"
         >
           Maximize skill, minimize budget
         </h1>
         <p
-          class="mb-6 text-base font-normal leading-relaxed text-[#83869A] md:mb-[1.56rem] lg:mb-10 lg:text-lg lg:leading-7"
+          class="mb-6 text-base font-normal leading-relaxed text-[#83869A] md:mb-[1.56rem] lg:max-2xl:mb-10 lg:max-2xl:text-lg lg:max-2xl:leading-7"
         >
           Our modern courses across a range of in-demand skills will give you
           the knowledge you need to live the life you want.
         </p>
         <button
           type="button"
-          class="button2Idle button2Hover h-14 w-[10.4375rem] cursor-pointer text-base font-bold leading-relaxed text-white transition-all duration-500 ease-in lg:h-[3.9375rem]"
+          class="button2Idle button2Hover h-14 w-[10.4375rem] cursor-pointer text-base font-bold leading-relaxed text-white transition-all duration-500 ease-in lg:max-2xl:h-[3.9375rem]"
+          >Get Started</button
+        >
+      </div>
+      <picture>
+        <source
+          media="(min-width:1024px )"
+          srcset="/assets/image-hero-desktop.png"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/assets/image-hero-tablet.png"
+        />
+        <img
+          src="/assets/image-hero-mobile.png"
+          alt="heroImage"
+          class="absolute top-[21.19rem] md:right-[-329px] md:top-[-268px] lg:max-2xl:right-[-507px] lg:max-2xl:top-[-430px]"
+        />
+      </picture>
+    </section>
+    <section
+      class="section2 grid grid-cols-1 gap-y-10 px-4 pb-20 pt-[20rem] md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-14 md:pb-[5.38rem] md:pl-[2.44rem] md:pr-10 md:max-2xl:pt-[16.62rem] lg:max-2xl:grid-cols-3 lg:max-2xl:gap-y-20 lg:max-2xl:px-[10.31rem] lg:max-2xl:pb-[8.75rem] 2xl:max-2xl:gap-x-[1.88rem]"
+    >
+      <div
+        class="box1 flex h-[7.5rem] w-[21.4375rem] items-center rounded-[0.625rem] pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 md:max-2xl:items-start lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <h2
+          class="text-2xl font-extrabold leading-8 text-white lg:max-2xl:text-[2rem] lg:max-2xl:leading-10"
+        >
+          Check out our most popular courses!
+        </h2>
+      </div>
+      <!-- Animation -->
+      <div
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <img
+          src="/assets/icon-animation.svg"
+          alt="icon-animation"
+          class="absolute -top-8"
+        />
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
+          >
+            Animation
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+          >
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          >Get Started</button
+        >
+      </div>
+      <!--Design  -->
+      <div
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <img
+          src="/assets/icon-design.svg"
+          alt="icon-design"
+          class="absolute -top-8"
+        />
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
+          >
+            Design
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+          >
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          >Get Started</button
+        >
+      </div>
+      <!-- Photography -->
+      <div
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <img
+          src="/assets/icon-photography.svg"
+          alt="icon-photography"
+          class="absolute -top-8"
+        />
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
+          >
+            Photography
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+          >
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          >Get Started</button
+        >
+      </div>
+      <!-- Crypto -->
+      <div
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <img
+          src="/assets/icon-crypto.svg"
+          alt="icon-crypto"
+          class="absolute -top-8"
+        />
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
+          >
+            Crypto
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+          >
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
+          >Get Started</button
+        >
+      </div>
+      <!-- Business -->
+      <div
+        class="box relative flex h-[16.1875rem] w-[21.4375rem] flex-col items-start justify-center gap-6 rounded-[0.625rem] bg-white pl-7 pr-[1.81rem] md:h-[16.1875rem] md:w-[21.1875rem] md:pl-10 md:pr-[1.31rem] md:pt-14 lg:max-2xl:h-[20.125rem] lg:max-2xl:w-[21.875rem] lg:max-2xl:gap-8 lg:max-2xl:rounded-[0.9375rem] lg:max-2xl:px-8 lg:max-2xl:pt-16"
+      >
+        <img
+          src="/assets/icon-business.svg"
+          alt="icon-business"
+          class="absolute -top-8"
+        />
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-xl font-extrabold leading-normal text-[13183F] lg:max-2xl:text-2xl"
+          >
+            Business
+          </h2>
+          <p
+            class="text-base font-normal leading-relaxed text-[#83869A] lg:max-2xl:text-lg lg:max-2xl:leading-7"
+          >
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointer text-lg font-bold leading-7 text-[#F74780] transition-all duration-500 ease-in hover:text-[#FFA7C3]"
           >Get Started</button
         >
       </div>
     </section>
   </main>
+  <footer
+    class="footer flex items-center justify-between bg-[#13183F] px-4 py-9 md:pl-10 md:pr-[2.44rem] lg:max-2xl:px-[10.36rem] lg:max-2xl:py-8"
+  >
+    <img src="/assets/logo-light.svg" alt="logo" class="" />
+    <button
+      type="button"
+      class="button3Idle button3Hover z-50 h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:max-2xl:h-12 lg:max-2xl:w-[10.4375rem]"
+    >
+      Get Started
+    </button>
+  </footer>
 </Layout>
 
 <style>
   /* Section 2 */
   .section2 {
     background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  }
+
+  /* Boxs */
+  .box1 {
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+
+  .box {
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
   }
 
   /* BUTTONS */
