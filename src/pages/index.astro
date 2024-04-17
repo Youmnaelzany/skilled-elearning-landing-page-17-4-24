@@ -4,8 +4,41 @@ import "@/styles/globals.css";
 ---
 
 <Layout title="Frontend Mentor | Skilled e-learning landing page">
-  <header class="header"></header>
-  <main></main>
+  <header
+    class="header flex items-center justify-between px-4 pt-4 md:ml-[2.44rem] md:mr-10 md:mt-6 lg:mx-[10.31rem] lg:mt-[2.42rem]"
+  >
+    <img src="/assets/logo-dark.svg" alt="logo" class="logoImg" />
+    <button
+      type="button"
+      class="button1Idle button1Hover h-12 w-[8.75rem] cursor-pointer text-base font-bold leading-7 text-white transition-all duration-500 ease-in lg:h-12 lg:w-[10.4375rem]"
+    >
+      Get Started
+    </button>
+  </header>
+  <main>
+    <section
+      class="section1 mx-4 mt-[2.38rem] flex flex-col bg-white md:ml-[2.44rem] md:mr-10 md:mt-[2.25rem] md:max-lg:flex-row lg:mx-[10.31rem] lg:mt-[5.44rem] lg:items-center lg:justify-between"
+    >
+      <div class="md:w-[24.875rem] lg:w-[28.5625rem]">
+        <h1
+          class="mb-[1.63rem] text-[2.5rem] font-extrabold leading-normal text-[#13183F] md:mb-[1.56rem] lg:mb-[1.81rem] lg:text-[3.5rem]"
+        >
+          Maximize skill, minimize budget
+        </h1>
+        <p
+          class="mb-6 text-base font-normal leading-relaxed text-[#83869A] md:mb-[1.56rem] lg:mb-10 lg:text-lg lg:leading-7"
+        >
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <button
+          type="button"
+          class="button2Idle button2Hover h-14 w-[10.4375rem] cursor-pointer text-base font-bold leading-relaxed text-white transition-all duration-500 ease-in lg:h-[3.9375rem]"
+          >Get Started</button
+        >
+      </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
@@ -19,7 +52,7 @@ import "@/styles/globals.css";
     border-radius: 1.75rem;
     background: var(--13183F, #13183f);
   }
-  .button1Idle:hover {
+  .button1Hover:hover {
     border-radius: 1.75rem;
     background: var(--666CA3, #666ca3);
   }
